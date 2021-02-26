@@ -68,6 +68,24 @@ nav ul li#nav_contact a {
 /* トップページ ここから↓ */
 /* トップページ ここまで↑ */
 
+/* 「結婚式場のコンセプト」ページ ここから↓ */
+.materials_box {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.image_left {
+    float: left;
+    margin-right: 25px;
+}
+.materials_box:last-child,
+.materials_box p:last-child {
+    margin-bottom: 0;
+}
+.materials_box h3 img:hover {
+    opacity: 0.5;
+}
+/* 「結婚式場のコンセプト」ページ ここまで↑ */
+
 /* 「スタッフ一覧」ページ ここから↓ */
 #news ul {
 	list-style-type: none;
@@ -100,6 +118,9 @@ table tbody tr:nth-child(odd) {
 }
 .gallery_box figure:first-child {
 	margin-left: 0;
+}
+.gallery_box figure:nth-child(4) {
+    margin-left: 0;
 }
 /* 「ブライダルフェア」ページ ここまで↑ */
 
