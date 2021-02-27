@@ -25,55 +25,29 @@ header h1 a {
 header h1 a img {
 	vertical-align: bottom;
 }
-#breadcrumb ul {
-	list-style-type: none;
-	padding: 0;
-}
-#breadcrumb ul li {
-	display: inline;
-	margin-right: 5px;
-}
-#breadcrumb ul li a {
-	padding-right: 15px;
-	background-image: url(../images/breadcrumb_arrow.png);
-	background-repeat: no-repeat;
-	background-position: right center;
-}
 #contents {
 	overflow: hidden;
 }
-.bnr_inner {
-	margin-bottom: 30px;
+#sub ul {
+	list-style-type: none;
+	padding: 0;
 }
-.bnr_inner dt img{
-	margin-bottom: 6px;
-	vertical-align: bottom;
-}
-.bnr_inner a {
-	text-decoration: none;
-}
-.bnr_inner dl, .bnr_inner dt, .bnr_inner dd, .bnr_inner p{
-	margin: 0;
-}
-#pagetop {
-	margin-bottom: 0;
-	float: right;
-}
-#pagetop a {
+#sub ul li a{
 	display: block;
-	min-height: 16px;
-	padding: 6px 0 6px 28px;
-	background-image: url(../images/bg_arrow.png);
-	background-repeat: no-repeat;
-	background-position: left bottom;
+	height: 0;
+	padding-top: 60px;
+	overflow: hidden;
 }
-address {
-	padding-top: 15px;
-	clear: both;
-	background-image: url(../images/bg_footer.png);
-	background-repeat: no-repeat;
-	font-style: normal;
-	text-align: center;
+#sub ul li.bnr_inner a{
+	background-image: url(../images/bnr_contact.png);
+}
+#sub ul li.bnr_inner a:hover{
+	background-position-y: -60px;
+}
+#sub ul li.bnr_inner a:active{
+	background-position-y: -120px;
+	transform: rotate(-1gitdeg);
+	transition: transform 2s linear;
 }
 #copyright {
 	margin-bottom: 15px;
@@ -81,91 +55,4 @@ address {
 }
 #copyright small {
 	font-size: 100%;
-}
-#main h2 {
-	margin-top: 0;
-	padding: 13px 0 13px 24px;
-	background-image: url(../images/bg_h2_head.png), url(../images/bg_h2_bottom.png);
-	background-repeat: no-repeat, no-repeat;
-	background-position: left top, left bottom;
-	font-size: 112.5%;
-}
-#graphic {
-	width: 840px;
-	height: 400px;
-	margin: 0 auto 30px auto;
-}
-#graphic ul {
-	list-style: none;
-	padding-left: 0;
-}
-#graphic ul li {
-	display: none;
-	position: absolute;
-}
-#graphic ul li.now {
-	display: block;
-}
-#news ul li time {
-	display: inline-block;
-	width: 175px;
-	color: #082B47;
-	font-weight: bold;
-	text-indent: 0;
-}
-.staff_box p:last-child {
-	margin-bottom: 0;
-}
-.image_right {
-	margin: 0 0 20px 25px;
-	float: right;
-}
-.image_left {
-	margin-right: 25px;
-	float: left;
-}
-table {
-	border-collapse: collapse;
-}
-caption {
-	overflow: hidden;
-}
-caption p {
-	margin-bottom: 30px;
-}
-table caption {
-	text-align: left;
-}
-table th, table td {
-	padding: 15px;
-	border: 1px solid #00577F;
-}
-table tr th:first-child {
-	width: 70px;
-}
-table tbody tr:nth-child(even) {
-	background-color: #DCEFF7;
-}
-.gallery_box {
-	overflow: hidden;
-}
-.gallery_box:first-of-type {
-	margin-top: 30px;
-}
-form p {
-	margin-bottom: 30px;
-}
-form p:nth-last-child(2) {
-	margin-bottom: 7px;
-}
-form p:last-child {
-	margin-bottom: 0;
-}
-input, textarea {
-	margin-top: 7px;
-}
-textarea {
-	width: 420px;
-	height: 115px;
-	overflow-y: scroll;
 }

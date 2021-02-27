@@ -15,7 +15,7 @@ nav ul {
 #graphic ul li img {
 	width: 451px;
 }
-#main, #news ul li, h2 {
+#main, #schedule ul li, h2 {
 	width: auto;
 	float: none;
 }
@@ -58,14 +58,14 @@ nav ul li#nav_materials a:hover,
 nav ul li#nav_contact a:hover {
 	background-color: #9ACEE7;
 }
-#news h2 {
+#schedule h2 {
 	margin-bottom: 0;
 }
-#news ul li {
+#schedule ul li {
 	padding: 20px 0 12px 0;
 	text-indent: 0;
 }
-#news time {
+#schedule time {
 	margin-bottom: 10px;
 }
 #sub {

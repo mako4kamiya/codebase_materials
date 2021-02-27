@@ -6,7 +6,7 @@ body {
 	background-color: #FFFFFF;
 	color: #082B47;
 }
-header, nav, #breadcrumb, #contents, footer {
+header, nav, #contents, footer {
 	width: 840px;
 	margin-left: auto;
 	margin-right: auto;
@@ -32,16 +32,16 @@ nav ul li a {
 	padding-top: 44px;
 	overflow: hidden;
 }
-nav ul li#nav_staff a {
+nav ul li#nav_schedule a {
 	background-image: url(../images/nav1.png);
 }
-nav ul li#nav_schedule a {
+nav ul li#nav_ruby a {
 	background-image: url(../images/nav2.png);
 }
-nav ul li#nav_materials a {
+nav ul li#nav_sinatra a {
 	background-image: url(../images/nav3.png);
 }
-nav ul li#nav_contact a {
+nav ul li#nav_else a {
 	background-image: url(../images/nav4.png);
 }
 #main {
@@ -49,6 +49,7 @@ nav ul li#nav_contact a {
 	float: left;
 }
 #sub {
+	padding-top: 100px;
 	width: 230px;
 	float: right;
 }
@@ -60,16 +61,35 @@ nav ul li#nav_contact a {
 	background-position: left top, left bottom;
 	font-size: 156.25%;
 }
-#staff #nav_staff a, #schedule #nav_schedule a, #materials #nav_materials a, #contact #nav_contact a, nav ul li a:hover {
+#schedule #nav_schedule a, #ruby #nav_ruby a, #sinatra #nav_sinatra a, #else #nav_else a, nav ul li a:hover {
 	background-position: 0 -45px;
+}
+footer {
+	padding-top: 70px;
+	background-image: url(../images/bg_h2_bottom.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
 }
 /* 基本レイアウト ここまで↑ */
 
-/* トップページ ここから↓ */
-/* トップページ ここまで↑ */
+/* 「スケジュール」ページ ここから↓ */
+#schedule #main ul {
+	list-style-type: none;
+	padding-left: 0;
+	height: 500px;
+	overflow: scroll;
+}
+#schedule #main ul li {
+	padding: 20px 0 20px 175px;
+	border-bottom: 1px dotted #156BB2;
+	color: #082B47;
+	text-indent: -175px;
+}
+/* 「スケジュール」ページ ここまで↑ */
 
-/* 「結婚式場のコンセプト」ページ ここから↓ */
-.materials_box {
+/* 「Ruby」「Sinatra」「その他資料」ページ ここから↓ */
+.lesson_box {
     overflow: hidden;
     margin-bottom: 30px;
 }
@@ -77,58 +97,22 @@ nav ul li#nav_contact a {
     float: left;
     margin-right: 25px;
 }
-.materials_box:last-child,
-.materials_box p:last-child {
+#main .lesson_box h1,
+#main .lesson_box p {
+	margin: 0 0 5px 0;
+    float: right;
+    width: 270px;
+}
+#main .lesson_box h1 {
+	padding: 10px 0 10px 24px;
+	background-image: url(../images/bg_h2_head.png), url(../images/bg_h2_bottom.png);
+	font-size: 112.5%;
+}
+.lesson_box img:hover {
+	opacity: 0.5;
+}
+.lesson_box:last-child,
+.lesson_box p:last-child {
     margin-bottom: 0;
 }
-.materials_box h3 img:hover {
-    opacity: 0.5;
-}
-/* 「結婚式場のコンセプト」ページ ここまで↑ */
-
-/* 「スタッフ一覧」ページ ここから↓ */
-#news ul {
-	list-style-type: none;
-	padding-left: 0;
-	height: 500px;
-	overflow: scroll;
-}
-#news ul li {
-	padding: 20px 0 20px 175px;
-	border-bottom: 1px dotted #156BB2;
-	color: #082B47;
-	text-indent: -175px;
-}
-/* 「スタッフ一覧」ページ ここまで↑ */
-
-/* 「13期スケジュール」ページ ここから↓ */
-table thead tr th {
-	background-color: #9ACEE7;
-}
-table tbody tr:nth-child(odd) {
-	background-color: #ffffff;
-}
-/* 「13期スケジュール」ページ ここまで↑ */
-
-/* 「ブライダルフェア」ページ ここから↓ */
-.gallery_box figure {
-	width: 180px;
-	margin: 0 0 15px 15px;
-	float: left;
-}
-.gallery_box figure:first-child {
-	margin-left: 0;
-}
-.gallery_box figure:nth-child(4) {
-    margin-left: 0;
-}
-/* 「ブライダルフェア」ページ ここまで↑ */
-
-/* 「お問い合わせ」ページ ここから↓ */
-input[type="text"] {
-	width: 200px;
-}
-input[type="email"] {
-	width: 300px;
-}
-/* 「お問い合わせ」ページ ここまで↑ */
+/* 「Ruby」「Sinatra」「その他資料」ページ　ここまで↑ */
