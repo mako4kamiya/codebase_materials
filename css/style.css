@@ -1,10 +1,32 @@
 ﻿@charset "utf-8";
 
 /* 基本レイアウト ここから↓ */
-@import url(common.css);
 body {
+	margin: 0;
+	padding: 0;
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 87.5%;
+	line-height: 1.5;
 	background-color: #FFFFFF;
 	color: #082B47;
+}
+p {
+	margin: 0 0 20px 0;
+}
+img {
+	border: 0;
+}
+a {
+	color: #082B47;
+}
+a:hover {
+	color: #D6431B;
+}
+header h1 a {
+	display: inline-block;
+}
+header h1 a img {
+	vertical-align: bottom;
 }
 header, nav, #contents, footer {
 	width: 840px;
@@ -44,14 +66,15 @@ nav ul li#nav_sinatra a {
 nav ul li#nav_else a {
 	background-image: url(../images/nav4.png);
 }
+#schedule #nav_schedule a, #ruby #nav_ruby a, #sinatra #nav_sinatra a, #else #nav_else a, nav ul li a:hover {
+	background-position: 0 -45px;
+}
+#contents {
+	overflow: hidden;
+}
 #main {
 	width: 570px;
 	float: left;
-}
-#sub {
-	padding-top: 100px;
-	width: 230px;
-	float: right;
 }
 #main h1 {
 	margin: 0 0 30px 0;
@@ -61,15 +84,45 @@ nav ul li#nav_else a {
 	background-position: left top, left bottom;
 	font-size: 156.25%;
 }
-#schedule #nav_schedule a, #ruby #nav_ruby a, #sinatra #nav_sinatra a, #else #nav_else a, nav ul li a:hover {
-	background-position: 0 -45px;
+#sub {
+	padding-top: 100px;
+	width: 230px;
+	float: right;
+}
+#sub ul {
+	list-style-type: none;
+	padding: 0;
+}
+#sub ul li a{
+	display: block;
+	height: 0;
+	padding-top: 60px;
+	overflow: hidden;
+}
+#sub ul li.bnr_inner a{
+	background-image: url(../images/bnr_contact.png);
+}
+#sub ul li.bnr_inner a:hover{
+	background-position-y: -60px;
+}
+#sub ul li.bnr_inner a:active{
+	background-position-y: -120px;
+	transform: rotate(-1gitdeg);
+	transition: transform 2s linear;
 }
 footer {
 	padding-top: 70px;
-	background-image: url(../images/bg_h2_bottom.png);
+	background-image: url(../images/bg_bottom.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
+}
+#copyright {
+	margin-bottom: 15px;
+	text-align: center;
+}
+#copyright small {
+	font-size: 100%;
 }
 /* 基本レイアウト ここまで↑ */
 
@@ -89,11 +142,11 @@ footer {
 /* 「スケジュール」ページ ここまで↑ */
 
 /* 「Ruby」「Sinatra」「その他資料」ページ ここから↓ */
-.lesson_box {
+#main .lesson_box {
     overflow: hidden;
     margin-bottom: 30px;
 }
-.image_left {
+#main .image_left {
     float: left;
     margin-right: 25px;
 }
@@ -105,14 +158,14 @@ footer {
 }
 #main .lesson_box h1 {
 	padding: 10px 0 10px 24px;
-	background-image: url(../images/bg_h2_head.png), url(../images/bg_h2_bottom.png);
+	background-image: url(../images/bg_h2_head.png), url(../images/bg_bottom.png);
 	font-size: 112.5%;
 }
-.lesson_box img:hover {
+#main .lesson_box img:hover {
 	opacity: 0.5;
 }
-.lesson_box:last-child,
-.lesson_box p:last-child {
+#main .lesson_box:last-child,
+#main .lesson_box p:last-child {
     margin-bottom: 0;
 }
 /* 「Ruby」「Sinatra」「その他資料」ページ　ここまで↑ */

@@ -1,6 +1,6 @@
 ﻿@charset "utf-8";
 
-header, nav, #graphic, #contents, footer {
+header, nav, #contents, #main, #sub, footer {
 	width: 451px;
 }
 nav ul {
@@ -8,40 +8,29 @@ nav ul {
 	list-style-type: none;
 	overflow: hidden;
 }
-#graphic {
-	height: 231px;
-	padding-top: 10px;
-}
-#graphic ul li img {
-	width: 451px;
-}
-#main, #schedule ul li, h2 {
-	width: auto;
-	float: none;
-}
-nav ul li#nav_staff,
 nav ul li#nav_schedule,
-nav ul li#nav_materials,
-nav ul li#nav_contact {
+nav ul li#nav_ruby,
+nav ul li#nav_sinatra,
+nav ul li#nav_else {
 	width: 225px;
 }
-nav ul li#nav_staff,
-nav ul li#nav_materials {
+nav ul li#nav_schedule,
+nav ul li#nav_sinatra {
 	border: 1px solid #FFFFFF;
 	border-top: none;
 	border-left: none;
 }
-nav ul li#nav_schedule,
-nav ul li#nav_contact {
+nav ul li#nav_ruby,
+nav ul li#nav_else {
 	border: 1px solid #FFFFFF;
 	border-top: none;
 	border-right: none;
 	border-left: none;
 }
-nav ul li#nav_staff a,
 nav ul li#nav_schedule a,
-nav ul li#nav_materials a,
-nav ul li#nav_contact a {
+nav ul li#nav_ruby a,
+nav ul li#nav_sinatra a,
+nav ul li#nav_else a {
 	height: 44px;
 	margin-bottom: 0px;
 	padding-top: 0px;
@@ -52,32 +41,43 @@ nav ul li#nav_contact a {
 	text-decoration: none;
 	line-height: 3;
 }
-nav ul li#nav_staff a:hover,
 nav ul li#nav_schedule a:hover,
-nav ul li#nav_materials a:hover,
-nav ul li#nav_contact a:hover {
+nav ul li#nav_schedule a:hover,
+nav ul li#nav_sinatra a:hover,
+nav ul li#nav_else a:hover {
 	background-color: #9ACEE7;
 }
-#schedule h2 {
-	margin-bottom: 0;
-}
-#schedule ul li {
+#schedule #contents ul li {
 	padding: 20px 0 12px 0;
 	text-indent: 0;
 }
-#schedule time {
+#schedule #contents time {
 	margin-bottom: 10px;
 }
-#sub {
-	margin-left: 10px;
+#main, #sub {
+	padding: 0;
 	float: none;
+}
+#main .lesson_box h1,
+#main .lesson_box img,
+#main .lesson_box p {
+	float: unset;
+	padding-bottom: 5px;
+}
+#main .lesson_box img,
+#main .lesson_box p {
+	display: block;
+	margin: 0 auto;
+}
+#main .lesson_box h1 {
+	width: 100%;
+}
+#main .lesson_box img {
+	padding-bottom: 5px;
 }
 footer {
 	padding-top: 30px;
 }
 footer p {
 	float: none;
-}
-footer address {
-	width: 452px;
 }
